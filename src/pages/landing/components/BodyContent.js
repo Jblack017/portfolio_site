@@ -1,4 +1,5 @@
 import React from "react";
+import Blogs from "../../blogs/Blogs";
 import Hobbies from "../../hobbies/Hobbies";
 
 export default function BodyContent({ bodyContent }) {
@@ -12,7 +13,7 @@ export default function BodyContent({ bodyContent }) {
       page = "projects";
       break;
     case "blogs":
-      page = "blogs";
+      page = <Blogs />;
       break;
     case "hobbies":
       page = <Hobbies />;
